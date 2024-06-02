@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #222831;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+} */
+
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #8f8f8f;
+  background-color: #0c0c0c;
+  border-radius: 8px;
+  height: 600px;
+  width: 450px;
+  overflow: hidden;
+}
+
+.number::-webkit-outer-spin-button,
+.number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.box-styling {
+  height: 40px;
+  width: 320px;
+  padding: 8px;
+}
+
+.inputbox input {
+  background-color: transparent;
+  position: relative;
+  z-index: 10;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: none;
+  margin: 10px;
+  font-size: 1rem;
+  color: white;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s ease-out;
+}
+
+.inputbox input:focus,
+.inputbox input:valid {
+  border-bottom: 1px solid white;
+}
+
+.inputbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputbox span {
+  position: absolute;
+  padding: 10px 10px 20px;
+  height: 40px;
+  width: 320px;
+  display: inline;
+  transition: 0.5s;
+}
+
+.box-styling:valid ~ span,
+.box-styling:focus ~ span {
+  color: white;
+  transform: translateY(-20px);
+}
+
+.gender {
+  max-width: 320px;
+  width: 320px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.gender select {
+  background-color: #0c0c0c;
+  color: #8f8f8f;
+  border: 1px solid grey;
+  outline: none;
+}
+
+.gender div {
+  display: flex;
+  gap: 2.5px;
+}
+
+.drop-down-select {
+  height: 35px;
+  width: 145px;
+  overflow: none;
+}
+
+.gend-in {
+  display: flex;
+  flex-direction: column;
+}
+
+.log-sign {
+  display: flex;
+  gap: 5px;
+}
+
+.log-sign-buttons {
+  width: 250px;
+  height: 40px;
+  cursor: pointer;
+  background-color: #31363f;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  margin-top: 15px;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  transition: box-shadow 0.2s ease;
+  transition: text-shadow 0.19s ease;
+}
+
+.log-sign-buttons:hover {
+  text-shadow: 0 0 5px white;
+}
+
+.log-sign-buttons::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: white;
+  z-index: -1;
+  transition: transform 0.5s ease;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.log-sign-buttons:active {
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+}
+
+.forget {
+  color: white;
+  text-decoration: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  transition: text-shadow 0.19s ease;
+}
+
+.forget:hover {
+  text-shadow: 0 0 5px white;
+}
+
+.social-login {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.social-login .google {
+  width: 250px;
+  height: 40px;
+  color: white;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.social-login .white {
+  color: black;
+  transition: box-shadow 0.2s ease;
+}
+
+.social-login .white:hover {
+  box-shadow: 0 0 2.5px 5px rgb(184, 181, 181);
+  transition: transform 0.2s ease;
+}
+
+.social-login .white:active {
+  transform: translateY(-2px);
+}
+
+.social-login .blue {
+  background-color: #1a78f2;
+}
+
+.social-login .blue:hover {
+  box-shadow: 0 0 2.5px 5px #287ff1;
+  transition: transform 0.2s ease;
+}
+
+.social-login .blue:active {
+  transform: translateY(-2px);
+}
+
+.social-login .black {
+  background-color: black;
+}
+
+.social-login .black:hover {
+  box-shadow: 0 0 2.5px 5px black;
+  transition: transform 0.2s ease;
+}
+
+.social-login .black:active {
+  transform: translateY(-2px);
+}
+
+.or {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
